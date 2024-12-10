@@ -56,11 +56,11 @@
     </header>
     <!-- Главное Наполнение Сайта -->
     <main class="page-main">
-<!-- Герой -->
+      <!-- Герой -->
       <section class="hero">
         <div class="container hero-container">
           <h1 class="hero-title">эффективное решение для твоего бизнеса</h1>
-          <button type="button" class="hero-button">Заказать услугу</button>
+          <button type="button" class="hero-button" data-modal-open>Заказать услугу</button>
         </div>
       </section>
       <!-- Наши Преимущества -->
@@ -123,29 +123,39 @@
       <section class="section-work">
         <div class="container">
           <h2 class="title-work">Чем мы занимаемся</h2>
-          <ul class="list work-list " >
+          <ul class="list work-list">
             <li class="item">
               <img
-                src="./images/image1.jpg"
+                src="./images/img.png"
                 alt="работа с кодом"
                 width="370"
                 class="img"
               />
+              <div class="top-card">
+                <p class="subtitle">Десктопные приложения</p>
+              </div>
             </li>
             <li class="item">
               <img
                 src="./images/image2.jpg"
                 alt="работа на компьютере с моделями телефонов"
                 width="370"
-                class="img"/>
+                class="img"
+              />
+              <div class="top-card">
+                <p class="subtitle">мобильные приложения</p>
+              </div>
             </li>
             <li class="item">
               <img
                 class="img"
-                src="./images/image3.jpg" 
-                alt="работа на планшете с дизайном " 
-                width="370" 
-              >
+                src="./images/image3.jpg"
+                alt="работа на планшете с дизайном "
+                width="370"
+              />
+              <div class="top-card">
+                <p class="subtitle">дизайнерские решения</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -423,5 +433,13 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal ">
+        <button type="button" class="modal-button" data-modal-close>
+          <img src="./images/krestik.png" alt="крестик" width="15px" height="15px">
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
