@@ -60,7 +60,9 @@
       <section class="hero">
         <div class="container hero-container">
           <h1 class="hero-title">эффективное решение для твоего бизнеса</h1>
-          <button type="button" class="hero-button" data-modal-open>Заказать услугу</button>
+          <button type="button" class="hero-button" data-modal-open>
+            Заказать услугу
+          </button>
         </div>
       </section>
       <!-- Наши Преимущества -->
@@ -430,14 +432,81 @@
               </li>
             </ul>
           </div>
+          <div class="form-subscribe">
+            <h2 class="title">Подписаться на рассылку</h2>
+            <div class="flex-sub">
+              <input
+                class="subscribe-input"
+                type="email"
+                name="email-subscribe"
+                placeholder="E-mail"
+              />
+              <button type="submit" class="btn-subscribe">
+                Подписаться
+                <svg class="icon-sub" width="24" height="24">
+                  <use href="./images/sprite2.svg#telegram-m"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
-      <div class="modal ">
-        <button type="button" class="modal-button" data-modal-close>
-          <img src="./images/krestik.png" alt="крестик" width="15px" height="15px">
-        </button>
+      <div class="modal">
+        <button type="button" class="modal-button" data-modal-close></button>
+        <form class="form" autocomplete="off">
+          <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
+          <label class="form-field">
+            <span class="span-text">Имя</span>
+            <input
+              class="input"
+              type="text"
+              name="name-people"
+              placeholder=""
+            />
+            <svg class="form-icon" width="12" height="12">
+              <use href="./images/sprite2.svg#men-m"></use>
+            </svg>
+          </label>
+          <label class="form-field">
+            <span class="span-text">Телефон</span>
+            <input
+              class="input"
+              type="tel"
+              name="tel"
+              placeholder=""
+              pattern="[0-9]+"
+            />
+            <svg class="form-icon" width="13" height="13">
+              <use href="./images/sprite2.svg#tel-m"></use>
+            </svg>
+          </label>
+          <label class="form-field">
+            <span class="span-text">Почта</span>
+            <input class="input" type="email" name="email" placeholder="" />
+            <svg class="form-icon" width="15" height=" 12">
+              <use href="./images/sprite2.svg#envelope-m"></use>
+            </svg>
+          </label>
+          <label class="form-field">
+            <span class="span-text">Коментарий</span>
+            <textarea
+              class="field-coment"
+              
+              placeholder="Введите текст"
+            ></textarea>
+          </label>
+          <label class="checkbox-label">
+            <input class="checkbox-input" type="checkbox" name="policy" />
+            <span class="checkbox"></span>
+            <span class="checkbox-policy"
+              >Соглашаюсь с рассылкой и принимаю
+              <a href="" class="link-policy">Условия договора</a></span
+            >
+          </label>
+          <button type="submit" class="btn-form">Отправить</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
